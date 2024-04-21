@@ -11,7 +11,7 @@ class Jsonrepair < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.3/jsonrepair_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "642cd9eb35b9845840b834fb5b6e25cbbd023df8173b0c1b7aca87523b32ea1b"
+      sha256 "64ca9ab5af725d5a88d453c576ea20e1b654ed1ffe1eb4a3dfd12a268a8e811a"
 
       def install
         bin.install "jsonrepair"
@@ -19,7 +19,7 @@ class Jsonrepair < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.3/jsonrepair_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "6255665ec46cf8a1ba1b82e193c5633a3ca2b7ce383585256fea370f4241daed"
+      sha256 "456187d09b22b4eba3939bad6f02780ce30f4c6072708f7c615e5d3a672e98de"
 
       def install
         bin.install "jsonrepair"
@@ -30,7 +30,7 @@ class Jsonrepair < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.3/jsonrepair_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "32d7429f5e374fea41e562df624f27d425cfc1fe49f2f86b4eb1f21e442d856f"
+      sha256 "0a7d9815642bef9c0e4ce3cb678884e8c476632f663ad77a1b992315dd26e5d7"
 
       def install
         bin.install "jsonrepair"
@@ -38,7 +38,7 @@ class Jsonrepair < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.3/jsonrepair_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "953e0b9d55a64022987c0252dcb7a5f0c89d45bdcd24354e48e5aeea0d289173"
+      sha256 "6167909d2631fcb1cea650b5e68e4137216d67cb4e7d44ed223d599a7e3d2a5c"
 
       def install
         bin.install "jsonrepair"
