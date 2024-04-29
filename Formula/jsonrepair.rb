@@ -5,21 +5,21 @@
 class Jsonrepair < Formula
   desc "🔧 Repair JSON! Solution for JSON Anomalies from LLMs"
   homepage "https://github.com/RealAlexandreAI/json-repair"
-  version "0.0.6"
+  version "0.0.7"
   license "GPLv3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.6/jsonrepair_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "18dec167feb792195137a60f8a778b18b3f86a478a29334e7eaee83854a10583"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.7/jsonrepair_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9f34e901e2051157f4557f70b9b44a0b5e3842f7f612343a96a03c6cd2d03d6c"
 
       def install
         bin.install "jsonrepair"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.6/jsonrepair_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "df1f2cf64802df696237f5654fafcfa318750ef826600a4fa7f61bd1b62971f3"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.7/jsonrepair_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "34859f78c629fe8388ca690d3369e78e659b7dbf18780e2562beba615ebf9f44"
 
       def install
         bin.install "jsonrepair"
@@ -29,16 +29,16 @@ class Jsonrepair < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.6/jsonrepair_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ea66c0d925293c8853364c0b2faeb1c4a34ac8f3f2210184ef187de7d7f9d8bb"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.7/jsonrepair_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9fe11551833c7d48cf99ad3ac0de9cba2d328820108708921b38ff09e5ed8a44"
 
       def install
         bin.install "jsonrepair"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.6/jsonrepair_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f1fa5b76c12e26589cff432e2a9f6e91db8e5d98390513509813b72c788887ce"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.7/jsonrepair_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "1493e69e57d71425648e111b933c1bfdd9bf12bcbf3de0df74611bb4109e0de9"
 
       def install
         bin.install "jsonrepair"
