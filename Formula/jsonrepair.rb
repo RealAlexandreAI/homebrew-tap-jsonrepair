@@ -5,21 +5,21 @@
 class Jsonrepair < Formula
   desc "🔧 Repair JSON! Solution for JSON Anomalies from LLMs"
   homepage "https://github.com/RealAlexandreAI/json-repair"
-  version "0.0.16"
+  version "0.0.17"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.16/jsonrepair_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e5214b52e8e1b9ead7f8140827d74ffdf4df75d72c4ceda9e3383ed24dd29aa4"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.17/jsonrepair_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "842fc681a9d88529d0b1f657b67fd6dc7bcce3946ab2b62d4bb225c351e6b0ca"
 
       define_method(:install) do
         bin.install "jsonrepair"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.16/jsonrepair_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "643f313771e563ce584d718865e0a9f5824ad6f8302fd471d5c750541519e5b7"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.17/jsonrepair_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "96c8608e436725e508eef0c3ec17e455646294582110e5f184e6d9c243409a81"
 
       define_method(:install) do
         bin.install "jsonrepair"
@@ -29,15 +29,15 @@ class Jsonrepair < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.16/jsonrepair_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2d4ec99676f746375da758a78e8da98ada786dc0e8b8a7cde9897f311a4ae627"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.17/jsonrepair_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "0004f216b3c3cd70970bc7e3cc3f0181ba17481b4da11561eb199eb86c5168c2"
       define_method(:install) do
         bin.install "jsonrepair"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.16/jsonrepair_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2197048f5d0e9091284326a25d1e969b60d72a4be943b60a8900c61bf9801039"
+      url "https://github.com/RealAlexandreAI/json-repair/releases/download/v0.0.17/jsonrepair_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "97e5d3b22b2e2838190d7c1053c0b29abd8601a316e64d2c7c5a4d23479bbd48"
       define_method(:install) do
         bin.install "jsonrepair"
       end
